@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medicineSchema" xmlns="http://www.example.org/medicineSchema" elementFormDefault="qualified">
+<xs:element name="medicins">
+	<xs:complexType>
+		<xs:sequence>
+		 	<xs:element name="medicine" type="medicineInfo" minOccurs="16" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:complexType name="medicineInfo">
+	<xs:sequence>
+		<xs:element name="Name" type="xs:string" />
+		<xs:element name="Pharm" type="xs:string" />
+		<xs:element name="Group" type="Groups"/>
+		<xs:element name="Analogs" type="AnalogsInfo"/>
+		<xs:element name="Versions" type="VersionsInfo" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="Groups">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Vegetotropic" />
+		<xs:enumeration value="Hematotropic" />
+		<xs:enumeration value="Homeopathic" />
+		<xs:enumeration value="Hormones" />
+		<xs:enumeration value="Diagnostic" />
+		<xs:enumeration value="Immunotropic" />
+		<xs:enumeration value="Intermedians" />
+		<xs:enumeration value="Metabolics" />
+		<xs:enumeration value="Neurotropic" />
+		<xs:enumeration value="Organotropic" />
+		<xs:enumeration value="Antimicrobial" />
+		<xs:enumeration value="Antiparasitic" />
+		<xs:enumeration value="Antihelminthic" />
+		<xs:enumeration value="Antitumor" />
+		<xs:enumeration value="Regenerants" />
+		<xs:enumeration value="Reparants" />
+		<xs:enumeration value="Biologically active additives" />
+		<xs:enumeration value="Others" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="AnalogsInfo">
+	<xs:sequence>
+		<xs:element name="Analog" type="AnalogInfo"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AnalogInfo">
+	<xs:attribute name="name" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="VersionsInfo">
+	<xs:sequence>
+		<xs:element name="Version" type="VersionInfo"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VersionInfo">
+	<xs:sequence>
+		<xs:element name="Certificate" type="CertificateInfo" />
+		<xs:element name="Package" type="PackageInfo" />
+		<xs:element name="Dosage" type="DosageInfo" />
+	</xs:sequence>
+	<xs:attribute name="consistency" type="consistencyType" use="required"/>
+</xs:complexType>
+
+<xs:simpleType name="consistencyType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Powder" />
+		<xs:enumeration value="Granule" />
+		<xs:enumeration value="Capsule" />
+		<xs:enumeration value="Pills" />
+		<xs:enumeration value="Ointment" />
+		<xs:enumeration value="Suppositories" />
+		<xs:enumeration value="Plaster" />
+		<xs:enumeration value="Infusion" />
+		<xs:enumeration value="Syrup" />
+		<xs:enumeration value="Liquor" />
+		<xs:enumeration value="Aerosol" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="CertificateInfo">
+	<xs:sequence>
+		<xs:element name="Date_of_issue" type="xs:date" />
+		<xs:element name="Expiration_date" type="xs:date" />
+		<xs:element name="Registering_organization" type="xs:string" />
+	</xs:sequence>
+	<xs:attribute name="id" type="xs:ID" use="required" />
+</xs:complexType>
+
+<xs:complexType name="PackageInfo">
+	<xs:sequence>
+		<xs:element name="Quantity_in_package" type="xs:positiveInteger" />
+		<xs:element name="Price" type="xs:positiveInteger" />
+	</xs:sequence>
+	<xs:attribute name="type" type="PackageType" />
+</xs:complexType>
+
+<xs:simpleType name="PackageType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Jar" />
+		<xs:enumeration value="Test_tube" />
+		<xs:enumeration value="Can" />
+		<xs:enumeration value="Ampoule" />
+		<xs:enumeration value="Tutu" />
+		<xs:enumeration value="Packet" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="DosageInfo">
+	<xs:sequence>
+		<xs:element name="Measuring" type="xs:positiveInteger" />
+		<xs:element name="Frequency">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d times a (day|week)( ((before|after) eating)|)" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+	</xs:sequence>
+	<xs:attribute name="units">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="g" />
+				<xs:enumeration value="gram" />
+				<xs:enumeration value="mg" />
+				<xs:enumeration value="milligram" />
+				<xs:enumeration value="mcg" />
+				<xs:enumeration value="microgram" />
+				<xs:enumeration value="ml" />
+				<xs:enumeration value="milliliter" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:complexType>
+</xs:schema>

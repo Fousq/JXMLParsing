@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicins xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.example.org/medicineSchema" xsi:schemaLocation="http://www.example.org/medicineSchema medicibeSchema.xsd">
+	<medicine>
+		<Name>String</Name>
+	</medicine>
+</medicins>
