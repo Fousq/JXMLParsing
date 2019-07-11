@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medicineSchema" 
 			xmlns="http://www.example.org/medicineSchema" elementFormDefault="qualified">
-<xs:element name="medicins">
+<xs:element name="Medicins">
 	<xs:complexType>
 		<xs:sequence>
-		 	<xs:element name="medicine" type="medicineInfo" minOccurs="16" maxOccurs="unbounded" />
+		 	<xs:element name="Medicine" type="medicineInfo" minOccurs="1" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:element>
@@ -22,7 +22,7 @@
 		<xs:element name="Analogs">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="Analog">
+					<xs:element name="Analog" minOccurs="1" maxOccurs="unbounded">
 						<xs:complexType>
 							<xs:attribute name="name" type="NameType" use="required"/>
 						</xs:complexType>
@@ -33,7 +33,7 @@
 		<xs:element name="Versions">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="Version">
+					<xs:element name="Version" minOccurs="1" maxOccurs="unbounded">
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element name="Certificate" type="CertificateInfo" />
@@ -51,7 +51,7 @@
 
 <xs:simpleType name="NameType">
 	<xs:restriction base="xs:string">
-		<xs:pattern value="^[A-Z]\w+$" />
+		<xs:pattern value="[A-Z](\w|-|\s|\.|&amp;)+[a-z\.]" />
 	</xs:restriction>
 </xs:simpleType>
 
@@ -120,8 +120,8 @@
 
 <xs:complexType name="CertificateInfo">
 	<xs:sequence>
-		<xs:element name="Date_of_issue" type="xs:date" />
-		<xs:element name="Expiration_date" type="xs:date" />
+		<xs:element name="Date_of_issue" type="gMonthYear" />
+		<xs:element name="Expiration_date" type="gMonthYear" />
 		<xs:element name="Registering_organization">
 			<xs:complexType>
 				<xs:attribute name="name" type="NameType" use="required"/>
@@ -130,6 +130,12 @@
 	</xs:sequence>
 	<xs:attribute name="id" type="xs:ID" use="required" />
 </xs:complexType>
+
+<xs:simpleType name="gMonthYear">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="\d{2}[-\.]\d{4}" />
+	</xs:restriction>
+</xs:simpleType>
 
 <xs:complexType name="PackageInfo">
 	<xs:sequence>

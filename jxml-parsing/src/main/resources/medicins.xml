@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<medicins xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.example.org/medicineSchema" xsi:schemaLocation="http://www.example.org/medicineSchema medicibeSchema.xsd">
-	<medicine>
-		<Name>String</Name>
-	</medicine>
-</medicins>
+<Medicins xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		  xmlns="http://www.example.org/medicineSchema" 
+		  xsi:schemaLocation="http://www.example.org/medicineSchema medicineSchema.xsd">
+	<Medicine>
+		<Name>Imodium</Name>
+		<Pharm name="Janssen-cilag S.A." />
+		<Group>Organotropic</Group>
+		<Analogs>
+			<Analog name="Loperamide" />
+			<Analog name="Stoperan" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Pills">
+				<Certificate id="ID-1">
+					<Date_of_issue>07-2016</Date_of_issue>
+					<Expiration_date>06-2021</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Tutu">
+					<Quantity_in_package>20</Quantity_in_package>
+					<Price>2345</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>4</Measuring>
+					<Frequency>2 times a day</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+</Medicins>
