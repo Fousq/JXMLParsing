@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medicineSchema" xmlns="http://www.example.org/medicineSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medicineSchema" 
+			xmlns="http://www.example.org/medicineSchema" elementFormDefault="qualified">
 <xs:element name="medicins">
 	<xs:complexType>
 		<xs:sequence>
@@ -10,13 +11,73 @@
 
 <xs:complexType name="medicineInfo">
 	<xs:sequence>
-		<xs:element name="Name" type="xs:string" />
-		<xs:element name="Pharm" type="xs:string" />
+		<xs:element name="Name" type="NameType" />
+		<xs:element name="Pharm">
+			<xs:complexType>
+				<xs:attribute name="name" type="NameType" use="required" />
+				<xs:attribute name="country" type="countryType" use="optional" />
+			</xs:complexType>
+		</xs:element>
 		<xs:element name="Group" type="Groups"/>
-		<xs:element name="Analogs" type="AnalogsInfo"/>
-		<xs:element name="Versions" type="VersionsInfo" />
+		<xs:element name="Analogs">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Analog">
+						<xs:complexType>
+							<xs:attribute name="name" type="NameType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="Versions">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Version">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Certificate" type="CertificateInfo" />
+								<xs:element name="Package" type="PackageInfo" />
+								<xs:element name="Dosage" type="DosageInfo" />
+							</xs:sequence>
+							<xs:attribute name="consistency" type="consistencyType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
 	</xs:sequence>
 </xs:complexType>
+
+<xs:simpleType name="NameType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="^[A-Z]\w+$" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="countryType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Germany" />
+		<xs:enumeration value="Switzerland" />
+		<xs:enumeration value="Belgium" />
+		<xs:enumeration value="USA" />
+		<xs:enumeration value="France" />
+		<xs:enumeration value="UK" />
+		<xs:enumeration value="Ireland" />
+		<xs:enumeration value="Italy" />
+		<xs:enumeration value="Nietherland" />
+		<xs:enumeration value="Spain" />
+		<xs:enumeration value="India" />
+		<xs:enumeration value="Austria" />
+		<xs:enumeration value="Sweden" />
+		<xs:enumeration value="Israel" />
+		<xs:enumeration value="Singapore" />
+		<xs:enumeration value="China" />
+		<xs:enumeration value="Russia" />
+		<xs:enumeration value="Ukrain" />
+		<xs:enumeration value="Kazakhstan" />
+	</xs:restriction>
+</xs:simpleType>
 
 <xs:simpleType name="Groups">
 	<xs:restriction base="xs:string">
@@ -41,31 +102,6 @@
 	</xs:restriction>
 </xs:simpleType>
 
-<xs:complexType name="AnalogsInfo">
-	<xs:sequence>
-		<xs:element name="Analog" type="AnalogInfo"/>
-	</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="AnalogInfo">
-	<xs:attribute name="name" type="xs:string" use="required"/>
-</xs:complexType>
-
-<xs:complexType name="VersionsInfo">
-	<xs:sequence>
-		<xs:element name="Version" type="VersionInfo"/>
-	</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="VersionInfo">
-	<xs:sequence>
-		<xs:element name="Certificate" type="CertificateInfo" />
-		<xs:element name="Package" type="PackageInfo" />
-		<xs:element name="Dosage" type="DosageInfo" />
-	</xs:sequence>
-	<xs:attribute name="consistency" type="consistencyType" use="required"/>
-</xs:complexType>
-
 <xs:simpleType name="consistencyType">
 	<xs:restriction base="xs:string">
 		<xs:enumeration value="Powder" />
@@ -86,7 +122,11 @@
 	<xs:sequence>
 		<xs:element name="Date_of_issue" type="xs:date" />
 		<xs:element name="Expiration_date" type="xs:date" />
-		<xs:element name="Registering_organization" type="xs:string" />
+		<xs:element name="Registering_organization">
+			<xs:complexType>
+				<xs:attribute name="name" type="NameType" use="required"/>
+			</xs:complexType>
+		</xs:element>
 	</xs:sequence>
 	<xs:attribute name="id" type="xs:ID" use="required" />
 </xs:complexType>
@@ -98,7 +138,7 @@
 	</xs:sequence>
 	<xs:attribute name="type" type="PackageType" />
 </xs:complexType>
-
+	
 <xs:simpleType name="PackageType">
 	<xs:restriction base="xs:string">
 		<xs:enumeration value="Jar" />
@@ -121,7 +161,7 @@
 			</xs:simpleType>
 		</xs:element>
 	</xs:sequence>
-	<xs:attribute name="units">
+	<xs:attribute name="units" use="required">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
 				<xs:enumeration value="g" />
