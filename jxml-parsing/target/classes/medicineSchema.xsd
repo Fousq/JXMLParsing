@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medicineSchema" 
+			xmlns="http://www.example.org/medicineSchema" elementFormDefault="qualified">
+<xs:element name="Medicins">
+	<xs:complexType>
+		<xs:sequence>
+		 	<xs:element name="Medicine" type="medicineInfo" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:complexType name="medicineInfo">
+	<xs:sequence>
+		<xs:element name="Name" type="NameType" />
+		<xs:element name="Pharm">
+			<xs:complexType>
+				<xs:attribute name="name" type="NameType" use="required" />
+				<xs:attribute name="country" type="countryType" use="optional" />
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="Group" type="Groups"/>
+		<xs:element name="Analogs">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Analog" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:attribute name="name" type="NameType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="Versions">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="Version" minOccurs="1" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Certificate" type="CertificateInfo" />
+								<xs:element name="Package" type="PackageInfo" />
+								<xs:element name="Dosage" type="DosageInfo" />
+							</xs:sequence>
+							<xs:attribute name="consistency" type="consistencyType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="NameType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z](\w|-|\s|\.|&amp;)+[a-z\.]" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="countryType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Germany" />
+		<xs:enumeration value="Switzerland" />
+		<xs:enumeration value="Belgium" />
+		<xs:enumeration value="USA" />
+		<xs:enumeration value="France" />
+		<xs:enumeration value="UK" />
+		<xs:enumeration value="Ireland" />
+		<xs:enumeration value="Italy" />
+		<xs:enumeration value="Nietherland" />
+		<xs:enumeration value="Spain" />
+		<xs:enumeration value="India" />
+		<xs:enumeration value="Austria" />
+		<xs:enumeration value="Sweden" />
+		<xs:enumeration value="Israel" />
+		<xs:enumeration value="Singapore" />
+		<xs:enumeration value="China" />
+		<xs:enumeration value="Russia" />
+		<xs:enumeration value="Ukrain" />
+		<xs:enumeration value="Kazakhstan" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Groups">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Vegetotropic" />
+		<xs:enumeration value="Hematotropic" />
+		<xs:enumeration value="Homeopathic" />
+		<xs:enumeration value="Hormones" />
+		<xs:enumeration value="Diagnostic" />
+		<xs:enumeration value="Immunotropic" />
+		<xs:enumeration value="Intermedians" />
+		<xs:enumeration value="Metabolics" />
+		<xs:enumeration value="Neurotropic" />
+		<xs:enumeration value="Organotropic" />
+		<xs:enumeration value="Antimicrobial" />
+		<xs:enumeration value="Antiparasitic" />
+		<xs:enumeration value="Antihelminthic" />
+		<xs:enumeration value="Antitumor" />
+		<xs:enumeration value="Regenerants" />
+		<xs:enumeration value="Reparants" />
+		<xs:enumeration value="Biologically active additives" />
+		<xs:enumeration value="Others" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="consistencyType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Powder" />
+		<xs:enumeration value="Granule" />
+		<xs:enumeration value="Capsule" />
+		<xs:enumeration value="Pills" />
+		<xs:enumeration value="Ointment" />
+		<xs:enumeration value="Suppositories" />
+		<xs:enumeration value="Plaster" />
+		<xs:enumeration value="Infusion" />
+		<xs:enumeration value="Syrup" />
+		<xs:enumeration value="Liquor" />
+		<xs:enumeration value="Aerosol" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="CertificateInfo">
+	<xs:sequence>
+		<xs:element name="Date_of_issue" type="gMonthYear" />
+		<xs:element name="Expiration_date" type="gMonthYear" />
+		<xs:element name="Registering_organization">
+			<xs:complexType>
+				<xs:attribute name="name" type="NameType" use="required"/>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+	<xs:attribute name="id" type="xs:ID" use="required" />
+</xs:complexType>
+
+<xs:simpleType name="gMonthYear">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="\d{2}[-\.]\d{4}" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="PackageInfo">
+	<xs:sequence>
+		<xs:element name="Quantity_in_package" type="xs:positiveInteger" />
+		<xs:element name="Price" type="xs:positiveInteger" />
+	</xs:sequence>
+	<xs:attribute name="type" type="PackageType" />
+</xs:complexType>
+	
+<xs:simpleType name="PackageType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Jar" />
+		<xs:enumeration value="Test_tube" />
+		<xs:enumeration value="Can" />
+		<xs:enumeration value="Ampoule" />
+		<xs:enumeration value="Tutu" />
+		<xs:enumeration value="Packet" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="DosageInfo">
+	<xs:sequence>
+		<xs:element name="Measuring" type="xs:positiveInteger" />
+		<xs:element name="Frequency">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="\d times a (day|week)( ((before|after) eating)|)" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+	</xs:sequence>
+	<xs:attribute name="units" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="g" />
+				<xs:enumeration value="gram" />
+				<xs:enumeration value="mg" />
+				<xs:enumeration value="milligram" />
+				<xs:enumeration value="mcg" />
+				<xs:enumeration value="microgram" />
+				<xs:enumeration value="ml" />
+				<xs:enumeration value="milliliter" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:complexType>
+</xs:schema>

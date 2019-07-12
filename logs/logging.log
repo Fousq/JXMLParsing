@@ -1,0 +1,92 @@
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:66 - Version
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:68 - 1
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:65 - 3
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:66 - Version
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImpl:68 - 1
+[DEBUG] 2019-07-12 20:06:43 [main] DOMParserImplTest:44 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-12 20:09:50 [main] DOMParserImplTest:44 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-12 20:20:12 [main] SAXParserImplTest:41 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=
+, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=
+				], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:62 - Group has been found.
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - Organotropic
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+		
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+			
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+			
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+		
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+		
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+			
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 07-2016
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 06-2021
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:91 - Registering organization has been found.
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:153 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 20
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 2345
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 4
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+					
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 2 times a day
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+				
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+			
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+		
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+	
+[DEBUG] 2019-07-12 20:22:55 [main] MedicineHandler:127 - 
+
+[DEBUG] 2019-07-12 20:22:55 [main] SAXParserImplTest:41 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=
+, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=
+				], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:62 - Group has been found.
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:127 - Group: Organotropic
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:129 - Group: Organotropic
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:91 - Registering organization has been found.
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:155 - REG: 
+				
+[DEBUG] 2019-07-12 20:25:05 [main] MedicineHandler:157 - REG: 
+				
+[DEBUG] 2019-07-12 20:25:05 [main] SAXParserImplTest:41 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=
+				], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-12 20:26:43 [main] MedicineHandler:61 - Group has been found.
+[DEBUG] 2019-07-12 20:26:43 [main] MedicineHandler:125 - Group: Organotropic
+[DEBUG] 2019-07-12 20:26:43 [main] MedicineHandler:127 - Group: Organotropic
+[DEBUG] 2019-07-12 20:26:43 [main] SAXParserImplTest:41 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]

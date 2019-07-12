@@ -1,0 +1,187 @@
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParser:29 - 06-2021
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParser:30 - REG: Registering_organization
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParser:31 - 1
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParser:32 - name
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParser:34 - Jonson&Jonson
+[DEBUG] 2019-07-12 11:21:21 [main] CertificateParserTest:42 - Certificate [id=1, dateOfIssue=Fri Jul 01 00:00:00 ALMT 2016, exparetionDate=Tue Jun 01 00:00:00 ALMT 2021, RegisterOrg=Jonson&Jonson]
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParserTest:39 - 1
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParserTest:40 - Certificate
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:22 - 1
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:24 - 07-2016
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:26 - 07-2016
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:27 - EXPAR: Expiration_date
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:29 - 06-2021
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:30 - REG: Registering_organization
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:31 - 1
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:32 - name
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParser:34 - Jonson&Jonson
+[DEBUG] 2019-07-12 11:23:35 [main] CertificateParserTest:42 - Certificate [id=1, dateOfIssue=1 июл. 2016 г., 0:00:00, exparetionDate=Tue Jun 01 00:00:00 ALMT 2021, RegisterOrg=Jonson&Jonson]
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParserTest:39 - 1
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParserTest:40 - Certificate
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:22 - 1
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:24 - 07-2016
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:26 - 07-2016
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:27 - EXPAR: Expiration_date
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:29 - 06-2021
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:30 - REG: Registering_organization
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:31 - 1
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:32 - name
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParser:34 - Jonson&Jonson
+[DEBUG] 2019-07-12 11:27:14 [main] CertificateParserTest:42 - Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson]
+[DEBUG] 2019-07-12 11:31:48 [main] CertificateParserTest:41 - 1
+[DEBUG] 2019-07-12 11:31:48 [main] CertificateParserTest:42 - Certificate
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:22 - 1
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:24 - 07-2016
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:26 - 07-2016
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:27 - EXPAR: Expiration_date
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:29 - 06-2021
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:30 - REG: Registering_organization
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:31 - 1
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:32 - name
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParser:34 - Jonson&Jonson
+[DEBUG] 2019-07-12 11:31:49 [main] CertificateParserTest:44 - Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson]
+[DEBUG] 2019-07-12 11:43:57 [main] MedicinePackageParserTest:38 - MedicinePackage [type=Tutu, quantity=20, price=2345]
+[DEBUG] 2019-07-12 11:51:24 [main] DosageParserTest:38 - Dosage [measuring=4 ml, frequency=2 times a day]
+[DEBUG] 2019-07-12 12:02:49 [main] VersionParserTest:42 - Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]
+[DEBUG] 2019-07-12 19:49:35 [main] DOMParserImpl:57 - 3
+[DEBUG] 2019-07-12 19:51:12 [main] DOMParserImpl:44 - Name
+[DEBUG] 2019-07-12 19:51:12 [main] DOMParserImpl:47 - Pharm
+[DEBUG] 2019-07-12 19:51:12 [main] DOMParserImpl:52 - Analogs
+[DEBUG] 2019-07-12 19:51:12 [main] DOMParserImpl:59 - Versions
+[DEBUG] 2019-07-12 19:51:12 [main] DOMParserImpl:61 - 3
+[DEBUG] 2019-07-12 19:52:09 [main] DOMParserImpl:44 - Name
+[DEBUG] 2019-07-12 19:52:09 [main] DOMParserImpl:47 - Pharm
+[DEBUG] 2019-07-12 19:52:09 [main] DOMParserImpl:52 - Analogs
+[DEBUG] 2019-07-12 19:52:09 [main] DOMParserImpl:59 - Versions
+[DEBUG] 2019-07-12 19:52:09 [main] DOMParserImpl:61 - 3
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:44 - Name
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:47 - Pharm
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:52 - Analogs
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:59 - Versions
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:61 - 3
+[DEBUG] 2019-07-12 19:52:32 [main] DOMParserImpl:63 - Version
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:44 - Name
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:47 - Pharm
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:52 - Analogs
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:55 - null
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:55 - null
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:60 - Versions
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:62 - 3
+[DEBUG] 2019-07-12 19:53:06 [main] DOMParserImpl:64 - Version
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:44 - Name
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:47 - Pharm
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:52 - Analogs
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:55 - 
+			
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:55 - null
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:55 - 
+			
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:55 - null
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:55 - 
+		
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:60 - Versions
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:62 - 3
+[DEBUG] 2019-07-12 19:53:20 [main] DOMParserImpl:64 - Version
+[DEBUG] 2019-07-12 19:57:10 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:57:10 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:57:10 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:57:10 [main] DOMParserImpl:56 - #text
+[DEBUG] 2019-07-12 19:57:54 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:57:54 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:57:54 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:57:54 [main] DOMParserImpl:56 - #text
+[DEBUG] 2019-07-12 19:58:20 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:58:20 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:58:20 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:58:20 [main] DOMParserImpl:56 - #text
+[DEBUG] 2019-07-12 19:58:44 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:58:44 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:58:44 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:58:44 [main] DOMParserImpl:56 - #text
+[DEBUG] 2019-07-12 19:59:14 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:59:14 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:59:14 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:59:14 [main] DOMParserImpl:56 - [#text: 
+			]
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:56 - Analog
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:58 - 1
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:59 - Loperamide
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:56 - Analog
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:58 - 1
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:59 - Stoperan
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:64 - Versions
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:66 - 3
+[DEBUG] 2019-07-12 19:59:27 [main] DOMParserImpl:68 - #text
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 19:59:49 [main] DOMParserImpl:65 - Version
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:65 - [Version: null]
+[DEBUG] 2019-07-12 20:00:17 [main] DOMParserImpl:65 - null
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:01:19 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:01:42 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:01:54 [main] DOMParserImpl:65 - Version
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:65 - Version
+[DEBUG] 2019-07-12 20:02:22 [main] DOMParserImpl:67 - 1
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:66 - Version
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:68 - 1
+[DEBUG] 2019-07-12 20:02:47 [main] DOMParserImpl:65 - 3
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:61 - Versions
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:63 - 3
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:65 - 1
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:66 - Version
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:68 - 1
+[DEBUG] 2019-07-12 20:04:21 [main] DOMParserImpl:65 - 3
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:59 - 1
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:62 - Versions
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:64 - 3
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:66 - 1
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:67 - Version
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:69 - 1
+[DEBUG] 2019-07-12 20:04:57 [main] DOMParserImpl:66 - 3
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:45 - Name
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:48 - Pharm
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:53 - Analogs
+[DEBUG] 2019-07-12 20:05:56 [main] DOMParserImpl:61 - Versions
