@@ -45,7 +45,7 @@ public class XMLParserBuilder {
 		} else if (docBuilder != null) {
 			parser = new DOMParserImpl(docBuilder);
 		} else if (inputFactory != null) {
-			parser = new StAXParserImpl();
+			parser = new StAXParserImpl(inputFactory);
 		}
 		return parser;
 	}

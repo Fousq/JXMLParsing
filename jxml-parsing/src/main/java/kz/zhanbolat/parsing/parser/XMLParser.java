@@ -10,5 +10,5 @@ import org.xml.sax.SAXException;
 import kz.zhanbolat.parsing.entity.Medicine;
 
 public interface XMLParser {
-	List<Medicine> parse(InputStream input) throws SAXException, IOException, ParseException;
+	List<Medicine> parse(InputStream input) throws Exception;
 }

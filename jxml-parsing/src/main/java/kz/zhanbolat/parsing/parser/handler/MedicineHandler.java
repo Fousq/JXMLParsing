@@ -2,7 +2,6 @@ package kz.zhanbolat.parsing.parser.handler;
 
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -199,7 +198,7 @@ public class MedicineHandler extends DefaultHandler {
 	}
 	
 	public List<Medicine> getMedicins() {
-		return Collections.unmodifiableList(medicins);
+		return medicins;
 	}
 	
 }
