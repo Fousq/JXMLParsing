@@ -68,7 +68,8 @@ public class Dosage {
 		if (getClass() != obj.getClass())
 			return false;
 		Dosage other = (Dosage) obj;
-		return Objects.equals(frequency, other.frequency) && measuring == other.measuring
+		return Objects.equals(frequency, other.frequency) 
+				&& measuring == other.measuring
 				&& Objects.equals(units, other.units);
 	}
 	

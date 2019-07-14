@@ -17,10 +17,13 @@ public class VersionParser {
 	private static final short DOSAGE_INDEX = 5;
 	
 	public Version parse(Node node) throws ParseException {
-		String consistency = node.getAttributes().item(CONSISTENCY_INDEX).getNodeValue();
+		String consistency = node.getAttributes()
+				.item(CONSISTENCY_INDEX).getNodeValue();
 		NodeList childs = node.getChildNodes();
-		Certificate certificate = new CertificateParser().parse(childs.item(CERTIFICATE_INDEX));
-		MedicinePackage medPackage = new MedicinePackageParser().parse(childs.item(PACKAGE_INDEX));
+		Certificate certificate = new CertificateParser()
+				.parse(childs.item(CERTIFICATE_INDEX));
+		MedicinePackage medPackage = new MedicinePackageParser()
+				.parse(childs.item(PACKAGE_INDEX));
 		Dosage dosage = new DosageParser().parse(childs.item(DOSAGE_INDEX));
 		return new Version(consistency, certificate, medPackage, dosage);
 	}

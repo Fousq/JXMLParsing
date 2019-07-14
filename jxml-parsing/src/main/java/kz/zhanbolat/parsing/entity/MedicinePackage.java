@@ -68,7 +68,8 @@ public class MedicinePackage {
 		if (getClass() != obj.getClass())
 			return false;
 		MedicinePackage other = (MedicinePackage) obj;
-		return price == other.price && quantity == other.quantity && Objects.equals(type, other.type);
+		return (price == other.price && quantity == other.quantity) 
+				&& Objects.equals(type, other.type);
 	}
 	
 }

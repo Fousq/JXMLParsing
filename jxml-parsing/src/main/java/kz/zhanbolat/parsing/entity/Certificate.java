@@ -103,8 +103,10 @@ public class Certificate {
 		if (getClass() != obj.getClass())
 			return false;
 		Certificate other = (Certificate) obj;
-		return Objects.equals(RegisterOrg, other.RegisterOrg) && Objects.equals(dateOfIssue, other.dateOfIssue)
-				&& Objects.equals(exparetionDate, other.exparetionDate) && id == other.id;
+		return Objects.equals(RegisterOrg, other.RegisterOrg) 
+				&& Objects.equals(dateOfIssue, other.dateOfIssue)
+				&& Objects.equals(exparetionDate, other.exparetionDate) 
+				&& id == other.id;
 	}
 	
 }

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,9 +33,10 @@ public class DOMParserImpl implements XMLParser {
 	private static PharmParser pharmParser = new PharmParser();
 	private static VersionParser versionParser = new VersionParser();
 	private DocumentBuilder builder;
+	private DocumentBuilderFactory factory;
 	
-	public DOMParserImpl(DocumentBuilder builder) {
-		this.builder = builder;
+	private DOMParserImpl() {
+		
 	}
 	
 	public List<Medicine> parse(InputStream input) throws SAXException, 
@@ -65,6 +68,38 @@ public class DOMParserImpl implements XMLParser {
 			medicines.add(new Medicine(name, pharm, group, analogs, versions));
 		}
 		return medicines;
+	}
+	
+	public static Builder newBuilder() {
+		return new DOMParserImpl().new Builder();
+	}
+	
+	public class Builder {
+		
+		private Builder() {
+			
+		}
+		
+		public Builder setFactory(DocumentBuilderFactory factory) {
+			DOMParserImpl.this.factory = factory;
+			
+			return this;
+		}
+		
+		public Builder setBuilder(DocumentBuilder builder) {
+			DOMParserImpl.this.builder = builder;
+			
+			return this;
+		}
+		
+		public DOMParserImpl build() throws ParserConfigurationException {
+			if (builder == null) {
+				DOMParserImpl.this.builder = 
+						DOMParserImpl.this.factory.newDocumentBuilder();
+			}
+			return DOMParserImpl.this;
+		}
+		
 	}
 	
 }

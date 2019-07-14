@@ -8,3 +8,54 @@
 [DEBUG] 2019-07-14 16:43:59 [main] DOMParserImplTest:44 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
 [DEBUG] 2019-07-14 16:44:08 [main] StAXParserImplTest:36 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
 [DEBUG] 2019-07-14 16:44:18 [main] StAXParserImplTest:36 - Medicine [name=Adderall, pharm=Pharm [name=Adderall Org., country=null], group=Neurotropic, analogs=[Alprazolam], versions=[Version [consistency=Pills, certificate=Certificate [id=2, dateOfIssue=09-2014, exparetionDate=02-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Packet, quantity=10, price=1500], dosage=Dosage [measuring=4 mg, frequency=1 times a day before eating]]]]
+[DEBUG] 2019-07-14 20:21:49 [main] DOMParserImplTest:43 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Organotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Organotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Neurotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Neurotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Hematotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Hematotropic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antihelminthic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antihelminthic
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:58 - Group has been found.
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:121 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] MedicineHandler:123 - Group: Antimicrobial
+[DEBUG] 2019-07-14 20:21:58 [main] SAXParserImplTest:46 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-14 20:22:09 [main] StAXParserImplTest:39 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]

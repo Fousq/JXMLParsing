@@ -12,12 +12,13 @@ public class PharmParser {
 	public Pharm parse(Node node) {
 		NamedNodeMap attributes = node.getAttributes();
 		return (attributes.getLength() == 2) ? 
-					(attributes.item(NAME_INDEX).getNodeName().equals("name")) ?
-							new Pharm(attributes.item(NAME_INDEX).getNodeValue(),
-									  attributes.item(COUNTRY_INDEX).getNodeValue())
-							: new Pharm(attributes.item(COUNTRY_INDEX).getNodeValue(),
-										attributes.item(NAME_INDEX).getNodeValue())
-					: new Pharm(attributes.item(NAME_INDEX).getNodeValue());
+				(attributes.item(NAME_INDEX).getNodeName().equals("name")) ?
+						new Pharm(attributes.item(NAME_INDEX).getNodeValue(),
+								attributes.item(COUNTRY_INDEX).getNodeValue())
+						: new Pharm(attributes
+										.item(COUNTRY_INDEX).getNodeValue(),
+								attributes.item(NAME_INDEX).getNodeValue())
+				: new Pharm(attributes.item(NAME_INDEX).getNodeValue());
 	}
 	
 }

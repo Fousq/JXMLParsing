@@ -2,35 +2,38 @@ package kz.zhanbolat.parsing;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-import java.text.ParseException;
+import java.io.InputStream;
 import java.util.List;
 
 import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.xml.sax.SAXException;
 
 import kz.zhanbolat.parsing.entity.Medicine;
 import kz.zhanbolat.parsing.parser.StAXParserImpl;
+import kz.zhanbolat.parsing.parser.XMLParser;
 
 public class StAXParserImplTest {
-	private static Logger logger = LogManager.getLogger(StAXParserImplTest.class);
+	private static Logger logger = 
+			LogManager.getLogger(StAXParserImplTest.class);
 	private static XMLInputFactory factory;
+	private static InputStream input;
 	
 	@BeforeClass
 	public static void init() {
 		factory = XMLInputFactory.newInstance();
+		input = StAXParserImplTest.class.getClassLoader()
+				.getResourceAsStream("medicins.xml");
 	}
 	
 	@Test
-	public void parseShouldWorkCorrectly() throws SAXException, IOException, ParseException, XMLStreamException {
-		StAXParserImpl parser = new StAXParserImpl(factory);
-		List<Medicine> medicins = parser.parse(getClass().getClassLoader().getResourceAsStream("medicins.xml"));
+	public void parseShouldWorkCorrectly() throws Exception {
+		XMLParser parser = StAXParserImpl
+				.newBuilder().setFactory(factory).build();
+		List<Medicine> medicins = parser.parse(input);
 		assertTrue(medicins.size() != 0);
 		Medicine medicine = medicins.get(0);
 		logger.debug(medicine);

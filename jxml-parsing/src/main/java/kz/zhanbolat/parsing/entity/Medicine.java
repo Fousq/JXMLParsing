@@ -95,8 +95,10 @@ public class Medicine {
 		if (getClass() != obj.getClass())
 			return false;
 		Medicine other = (Medicine) obj;
-		return Objects.equals(analogs, other.analogs) && Objects.equals(group, other.group)
-				&& Objects.equals(name, other.name) && Objects.equals(pharm, other.pharm)
+		return Objects.equals(analogs, other.analogs) 
+				&& Objects.equals(group, other.group)
+				&& Objects.equals(name, other.name) 
+				&& Objects.equals(pharm, other.pharm)
 				&& Objects.equals(versions, other.versions);
 	}
 	

@@ -26,8 +26,8 @@ public class StAXParserImpl implements XMLParser {
 	private static Logger logger = LogManager.getLogger(StAXParserImpl.class);
 	private XMLInputFactory factory;
 	
-	public StAXParserImpl(XMLInputFactory factory) {
-		this.factory = factory;
+	private StAXParserImpl() {
+		
 	}
 	
 	@Override
@@ -77,15 +77,16 @@ public class StAXParserImpl implements XMLParser {
 					break;
 				case "Certificate":
 					certificate = new Certificate();
-					int id = Integer.parseInt(reader.getAttributeValue(null, "id").substring(3));
+					int id = Integer.parseInt(reader
+							.getAttributeValue(null, "id").substring(3));
 					certificate.setId(id);
 					break;
 				case "Date_of_issue":
 					try {
 						certificate.setDateOfIssue(reader.getElementText());
 					} catch (ParseException e) {
-						logger.error("Error in the format of the date. Value will be "
-								+ "setted to today's date.", e);
+						logger.error("Error in the format of the date."
+								+ " Value will be setted to today's date.", e);
 						certificate.setDateOfIssue(new Date());
 					}
 					break;
@@ -93,13 +94,14 @@ public class StAXParserImpl implements XMLParser {
 					try {
 						certificate.setExparetionDate(reader.getElementText());
 					} catch (ParseException e) {
-						logger.error("Error in the format of the date. Value will be "
-								+ "setted to today's date.", e);
+						logger.error("Error in the format of the date."
+								+ " Value will be setted to today's date.", e);
 						certificate.setExparetionDate(new Date());
 					}
 					break;
 				case "Registering_organization":
-					certificate.setRegisterOrg(reader.getAttributeValue(null, "name"));
+					certificate.setRegisterOrg(reader
+							.getAttributeValue(null, "name"));
 					break;
 				case "Package":
 					medPack = new MedicinePackage();
@@ -153,5 +155,27 @@ public class StAXParserImpl implements XMLParser {
 		}
 		return medicins;
 	}
-
+	
+	public static Builder newBuilder() {
+		return new StAXParserImpl().new Builder();
+	}
+	
+	public class Builder {
+		
+		private Builder() {
+			
+		}
+		
+		public Builder setFactory(XMLInputFactory factory) {
+			StAXParserImpl.this.factory = factory;
+			
+			return this;
+		}
+		
+		public StAXParserImpl build() {
+			return StAXParserImpl.this;
+		}
+		
+	}
+	
 }

@@ -55,7 +55,6 @@ public class MedicineHandler extends DefaultHandler {
 			medicine.setPharm(pharm);
 			break;
 		case "Group":
-			logger.debug("Group has been found.");
 			bmg = true;
 			break;
 		case "Analogs":
@@ -118,9 +117,7 @@ public class MedicineHandler extends DefaultHandler {
 			medicine.setName(new String(ch, start, length));
 			bmn = false;
 		} else if (bmg) {
-			logger.debug("Group: " + new String(ch, start, length));
 			medicine.setGroup(new String(ch, start, length));
-			logger.debug("Group: " + medicine.getGroup());
 			bmg = false;
 		} else if (bdoi) {
 			try {

@@ -13,7 +13,8 @@ public class DosageParser {
 	public Dosage parse(Node node) {
 		String units = node.getAttributes().item(UNITS_INDEX).getNodeValue();
 		NodeList childs = node.getChildNodes();
-		int measuring = Integer.parseInt(childs.item(MEASURING_INDEX).getTextContent());
+		int measuring = Integer.parseInt(childs
+				.item(MEASURING_INDEX).getTextContent());
 		String frequency = childs.item(FREQUENCY_INDEX).getTextContent();
 		return new Dosage(units, measuring, frequency);
 	}

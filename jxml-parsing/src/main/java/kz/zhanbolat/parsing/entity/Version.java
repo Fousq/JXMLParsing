@@ -81,8 +81,10 @@ public class Version {
 		if (getClass() != obj.getClass())
 			return false;
 		Version other = (Version) obj;
-		return Objects.equals(certificate, other.certificate) && Objects.equals(consistency, other.consistency)
-				&& Objects.equals(dosage, other.dosage) && Objects.equals(pack, other.pack);
+		return Objects.equals(certificate, other.certificate) 
+				&& Objects.equals(consistency, other.consistency)
+				&& Objects.equals(dosage, other.dosage) 
+				&& Objects.equals(pack, other.pack);
 	}
 	
 }

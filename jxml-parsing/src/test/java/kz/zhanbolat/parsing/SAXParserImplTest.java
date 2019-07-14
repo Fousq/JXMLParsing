@@ -2,40 +2,45 @@ package kz.zhanbolat.parsing;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-import java.text.ParseException;
+import java.io.InputStream;
 import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 
 import kz.zhanbolat.parsing.entity.Medicine;
 import kz.zhanbolat.parsing.parser.SAXParserImpl;
+import kz.zhanbolat.parsing.parser.XMLParser;
 import kz.zhanbolat.parsing.parser.handler.MedicineHandler;
 
 public class SAXParserImplTest {
-	private static Logger logger = LogManager.getLogger(SAXParserImplTest.class);
-	private static MedicineHandler handler;
-	private static SAXParserImpl parser;
+	private static Logger logger = 
+			LogManager.getLogger(SAXParserImplTest.class);
+	private static SAXParserFactory factory;
+	private static DefaultHandler handler;
+	private static InputStream input;
 	
 	@BeforeClass
-	public static void init() throws ParserConfigurationException, SAXException {
+	public static void init() throws ParserConfigurationException, 
+									 SAXException {
+		factory = SAXParserFactory.newInstance();
 		handler = new MedicineHandler();
-		parser = new SAXParserImpl(handler);
+		input = SAXParserImplTest.class.getClassLoader()
+				.getResourceAsStream("medicins.xml");
 	}
 	
 	@Test
-	public void parseShouldWorkCorrectly() throws SAXException, 
-												  IOException, 
-												  ParseException {
-		List<Medicine> medicins = parser.parse(getClass()
-												.getClassLoader()
-												  .getResourceAsStream("medicins.xml"));
+	public void parseShouldWorkCorrectly() throws Exception {
+		XMLParser parser = SAXParserImpl.newBuilder()
+				.setSAXParserFactory(factory).setHandler(handler).build();
+		List<Medicine> medicins = parser.parse(input);
 		assertTrue(medicins.size() != 0);
 		Medicine medicine = medicins.get(0);
 		logger.debug(medicine);

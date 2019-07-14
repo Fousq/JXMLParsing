@@ -2,9 +2,7 @@ package kz.zhanbolat.parsing;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
+import java.io.InputStream;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -15,30 +13,31 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.xml.sax.SAXException;
 
 import kz.zhanbolat.parsing.entity.Medicine;
 import kz.zhanbolat.parsing.parser.DOMParserImpl;
+import kz.zhanbolat.parsing.parser.XMLParser;
 
 public class DOMParserImplTest {
-	private static Logger logger = LogManager.getLogger(DOMParserImplTest.class);
+	private static Logger logger = 
+			LogManager.getLogger(DOMParserImplTest.class);
 	private static DocumentBuilderFactory factory;
 	private static DocumentBuilder builder;
+	private static InputStream input;
 	
 	@BeforeClass
 	public static void init() throws ParserConfigurationException {
 		factory = DocumentBuilderFactory.newInstance();
 		builder = factory.newDocumentBuilder();
+		input = DOMParserImplTest.class.getClassLoader()
+				.getResourceAsStream("medicins.xml");
 	}
 	
 	@Test
-	public void parseShouldWorkCorrectly() throws SAXException, 
-												  IOException, 
-												  ParseException {
-		DOMParserImpl parser = new DOMParserImpl(builder);
-		List<Medicine> medicins = parser.parse(getClass()
-												.getClassLoader()
-												  .getResourceAsStream("medicins.xml"));
+	public void parseShouldWorkCorrectly() throws Exception {
+		XMLParser parser = DOMParserImpl
+				.newBuilder().setBuilder(builder).build();
+		List<Medicine> medicins = parser.parse(input);
 		assertTrue(medicins.size() != 0);
 		Medicine medicine = medicins.get(0);
 		logger.debug(medicine);

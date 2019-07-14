@@ -13,8 +13,10 @@ public class MedicinePackageParser {
 	public MedicinePackage parse(Node node) {
 		String type = node.getAttributes().item(TYPE_INDEX).getNodeValue();
 		NodeList childs = node.getChildNodes();
-		int quantity = Integer.parseInt(childs.item(QUANTITY_INDEX).getTextContent());
-		int price = Integer.parseInt(childs.item(PRICE_INDEX).getTextContent());
+		int quantity = Integer.parseInt(childs
+				.item(QUANTITY_INDEX).getTextContent());
+		int price = Integer.parseInt(childs
+				.item(PRICE_INDEX).getTextContent());
 		return new MedicinePackage(type, quantity, price);
 	}
 	

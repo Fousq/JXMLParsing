@@ -60,7 +60,8 @@ public class Pharm {
 		if (getClass() != obj.getClass())
 			return false;
 		Pharm other = (Pharm) obj;
-		return Objects.equals(country, other.country) && Objects.equals(name, other.name);
+		return Objects.equals(country, other.country) 
+				&& Objects.equals(name, other.name);
 	}
 	
 }
