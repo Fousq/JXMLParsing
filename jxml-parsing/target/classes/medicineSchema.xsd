@@ -4,7 +4,7 @@
 <xs:element name="Medicins">
 	<xs:complexType>
 		<xs:sequence>
-		 	<xs:element name="Medicine" type="medicineInfo" minOccurs="1" maxOccurs="unbounded" />
+		 	<xs:element name="Medicine" type="medicineInfo" minOccurs="16" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:element>
@@ -14,8 +14,8 @@
 		<xs:element name="Name" type="NameType" />
 		<xs:element name="Pharm">
 			<xs:complexType>
-				<xs:attribute name="name" type="NameType" use="required" />
-				<xs:attribute name="country" type="countryType" use="optional" />
+				<xs:attribute name="name" type="NameType" use="required"/>
+				<xs:attribute name="country" type="countryType" use="optional" default="Kazakhstan"/>
 			</xs:complexType>
 		</xs:element>
 		<xs:element name="Group" type="Groups"/>
@@ -142,7 +142,7 @@
 		<xs:element name="Quantity_in_package" type="xs:positiveInteger" />
 		<xs:element name="Price" type="xs:positiveInteger" />
 	</xs:sequence>
-	<xs:attribute name="type" type="PackageType" />
+	<xs:attribute name="type" type="PackageType" use="required"/>
 </xs:complexType>
 	
 <xs:simpleType name="PackageType">

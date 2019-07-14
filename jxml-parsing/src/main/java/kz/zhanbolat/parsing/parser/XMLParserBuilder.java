@@ -4,11 +4,14 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLInputFactory;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import kz.zhanbolat.parsing.parser.handler.MedicineHandler;
 
 public class XMLParserBuilder {
+	private static Logger logger = LogManager.getLogger(XMLParserBuilder.class);
 	private XMLParser parser;
 	private MedicineHandler handler;
 	private DocumentBuilder docBuilder;
@@ -38,7 +41,11 @@ public class XMLParserBuilder {
 		}
 		return this;
 	}
-	
+
+	public boolean isBuildable() {
+		return isBuildable;
+	}
+
 	public XMLParser build() throws ParserConfigurationException, SAXException {
 		if (handler != null) {
 			parser = new SAXParserImpl(handler);

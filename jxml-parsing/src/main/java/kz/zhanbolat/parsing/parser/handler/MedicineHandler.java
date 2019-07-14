@@ -50,10 +50,8 @@ public class MedicineHandler extends DefaultHandler {
 			bmn = true;
 			break;
 		case "Pharm":
-			pharm = (attributes.getLength() == 2) ? 
-						new Pharm(attributes.getValue("name"), 
-								  attributes.getValue("country"))
-						: new Pharm(attributes.getValue("name"));
+			pharm = new Pharm(attributes.getValue("name"), 
+							  attributes.getValue("country"));
 			medicine.setPharm(pharm);
 			break;
 		case "Group":
@@ -119,14 +117,12 @@ public class MedicineHandler extends DefaultHandler {
 		if (bmn) {
 			medicine.setName(new String(ch, start, length));
 			bmn = false;
-		}
-		if (bmg) {
+		} else if (bmg) {
 			logger.debug("Group: " + new String(ch, start, length));
 			medicine.setGroup(new String(ch, start, length));
 			logger.debug("Group: " + medicine.getGroup());
 			bmg = false;
-		}
-		if (bdoi) {
+		} else if (bdoi) {
 			try {
 				certificate.setDateOfIssue(new String(ch, start, length));
 			} catch (ParseException e) {
@@ -136,8 +132,7 @@ public class MedicineHandler extends DefaultHandler {
 			} finally {
 				bdoi = false;
 			}
-		}
-		if (bexrd) {
+		} else if (bexrd) {
 			try {
 				certificate.setExparetionDate(new String(ch, start, length));
 			} catch (ParseException e) {
@@ -147,23 +142,19 @@ public class MedicineHandler extends DefaultHandler {
 			} finally {
 				bexrd = false;
 			}
-		}
-		if (bqip) {
+		} else if (bqip) {
 			int quantity = Integer.parseInt(new String(ch, start, length));
 			medPack.setQuantity(quantity);
 			bqip = false;
-		}
-		if (bpp) {
+		} else if (bpp) {
 			int price = Integer.parseInt(new String(ch, start, length));
 			medPack.setPrice(price);
 			bpp = false;
-		}
-		if (bdm) {
+		} else if (bdm) {
 			int measuring = Integer.parseInt(new String(ch, start, length));
 			dosage.setMeasuring(measuring);
 			bdm = false;
-		}
-		if (bdf) {
+		} else if (bdf) {
 			dosage.setFrequency(new String(ch, start, length));
 			bdf = false;
 		}

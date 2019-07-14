@@ -47,41 +47,40 @@ public class StAXParserImpl implements XMLParser {
 		while(reader.hasNext()) {
 			reader.next();
 			if (reader.getEventType() == XMLStreamReader.START_ELEMENT) {
-				if (reader.getLocalName().equals("Medicine")) {
+				switch(reader.getLocalName()) {
+				case "Medicine":
 					medicine = new Medicine();
-				}
-				if (reader.getLocalName().equals("Name")) {
+					break;
+				case "Name":
 					medicine.setName(reader.getElementText());
-				}
-				if (reader.getLocalName().equals("Pharm")) {
-					pharm = (reader.getAttributeCount() == 2)? 
-								new Pharm(reader.getAttributeValue(null, "name"),
-										  reader.getAttributeValue(null, "country"))
-								: new Pharm(reader.getAttributeValue(null, "name"));
+					break;
+				case "Pharm":
+					pharm = new Pharm(reader.getAttributeValue(null, "name"),
+									  reader.getAttributeValue(null, "country"));
 					medicine.setPharm(pharm);
-				}
-				if (reader.getLocalName().equals("Group")) {
+					break;
+				case "Group":
 					medicine.setGroup(reader.getElementText());
-				}
-				if (reader.getLocalName().equals("Analogs")) {
+					break;
+				case "Analogs":
 					analogs = new ArrayList<>();
-				}
-				if (reader.getLocalName().equals("Analog")) {
+					break;
+				case "Analog":
 					analogs.add(reader.getAttributeValue(null, "name"));
-				}
-				if (reader.getLocalName().equals("Versions")) {
+					break;
+				case "Versions":
 					versions = new ArrayList<>();
-				}
-				if (reader.getLocalName().equals("Version")) {
+					break;
+				case "Version":
 					version = new Version();
 					version.setConsistency(reader.getAttributeValue(null, "consistency"));
-				}
-				if (reader.getLocalName().equals("Certificate")) {
+					break;
+				case "Certificate":
 					certificate = new Certificate();
 					int id = Integer.parseInt(reader.getAttributeValue(null, "id").substring(3));
 					certificate.setId(id);
-				}
-				if (reader.getLocalName().equals("Date_of_issue")) {
+					break;
+				case "Date_of_issue":
 					try {
 						certificate.setDateOfIssue(reader.getElementText());
 					} catch (ParseException e) {
@@ -89,8 +88,8 @@ public class StAXParserImpl implements XMLParser {
 								+ "setted to today's date.", e);
 						certificate.setDateOfIssue(new Date());
 					}
-				}
-				if (reader.getLocalName().equals("Expiration_date")) {
+					break;
+				case "Expiration_date":
 					try {
 						certificate.setExparetionDate(reader.getElementText());
 					} catch (ParseException e) {
@@ -98,54 +97,57 @@ public class StAXParserImpl implements XMLParser {
 								+ "setted to today's date.", e);
 						certificate.setExparetionDate(new Date());
 					}
-				}
-				if (reader.getLocalName().equals("Registering_organization")) {
+					break;
+				case "Registering_organization":
 					certificate.setRegisterOrg(reader.getAttributeValue(null, "name"));
-				}
-				if (reader.getLocalName().equals("Package")) {
+					break;
+				case "Package":
 					medPack = new MedicinePackage();
 					medPack.setType(reader.getAttributeValue(null, "type"));
-				}
-				if (reader.getLocalName().equals("Quantity_in_package")) {
+					break;
+				case "Quantity_in_package":
 					int quantity = Integer.parseInt(reader.getElementText());
 					medPack.setQuantity(quantity);
-				}
-				if (reader.getLocalName().equals("Price")) {
+					break;
+				case "Price":
 					int price = Integer.parseInt(reader.getElementText());
 					medPack.setPrice(price);
-				}
-				if (reader.getLocalName().equals("Dosage")) {
+					break;
+				case "Dosage":
 					dosage = new Dosage();
 					dosage.setUnits(reader.getAttributeValue(null, "units"));
-				}
-				if (reader.getLocalName().equals("Measuring")) {
+					break;
+				case "Measuring":
 					int measuring = Integer.parseInt(reader.getElementText());
 					dosage.setMeasuring(measuring);
-				}
-				if (reader.getLocalName().equals("Frequency")) {
+					break;
+				case "Frequency":
 					dosage.setFrequency(reader.getElementText());
+					break;
 				}
 			} else if (reader.getEventType() == XMLStreamReader.END_ELEMENT) {
-				if (reader.getLocalName().equals("Medicine")) {
+				switch(reader.getLocalName()) {
+				case "Medicine":
 					medicins.add(medicine);
-				}
-				if (reader.getLocalName().equals("Analogs")) {
+					break;
+				case "Analogs":
 					medicine.setAnalogs(analogs);
-				}
-				if (reader.getLocalName().equals("Versions")) {
+					break;
+				case "Versions":
 					medicine.setVersions(versions);
-				}
-				if (reader.getLocalName().equals("Version")) {
+					break;
+				case "Version":
 					versions.add(version);
-				}
-				if (reader.getLocalName().equals("Certificate")) {
+					break;
+				case "Certificate":
 					version.setCertificate(certificate);
-				}
-				if (reader.getLocalName().equals("Package")) {
+					break;
+				case "Package":
 					version.setPack(medPack);
-				}
-				if (reader.getLocalName().equals("Dosage")) {
+					break;
+				case "Dosage":
 					version.setDosage(dosage);
+					break;
 				}
 			}
 		}

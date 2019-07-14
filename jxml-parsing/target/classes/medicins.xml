@@ -28,4 +28,380 @@
 			</Version>
 		</Versions>
 	</Medicine>
+	<Medicine>
+		<Name>Adderall</Name>
+		<Pharm name="Adderall Org."/>
+		<Group>Neurotropic</Group>
+		<Analogs>
+			<Analog name="Alprazolam" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Pills">
+				<Certificate id="ID-2">
+					<Date_of_issue>09-2014</Date_of_issue>
+					<Expiration_date>02-2021</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Packet">
+					<Quantity_in_package>10</Quantity_in_package>
+					<Price>1500</Price>
+				</Package>
+				<Dosage units="mg">
+					<Measuring>4</Measuring>
+					<Frequency>1 times a day before eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Ativan</Name>
+		<Pharm name="Ativan Org." />
+		<Group>Hematotropic</Group>
+		<Analogs>
+			<Analog name="Alprazolam" />
+			<Analog name="Doxycycline" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Powder">
+				<Certificate id="ID-3">
+					<Date_of_issue>02-2017</Date_of_issue>
+					<Expiration_date>02-2020</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Tutu">
+					<Quantity_in_package>5</Quantity_in_package>
+					<Price>1900</Price>
+				</Package>
+				<Dosage units="g">
+					<Measuring>1</Measuring>
+					<Frequency>3 times a day after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Codeine</Name>
+		<Pharm name="Codeine Org." />
+		<Group>Antihelminthic</Group>
+		<Analogs>
+			<Analog name="Loratadine" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Powder">
+				<Certificate id="ID-4">
+					<Date_of_issue>04-2018</Date_of_issue>
+					<Expiration_date>05-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>40</Quantity_in_package>
+					<Price>5000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-5">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-6">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-7">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-8">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-9">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-10">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-11">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-12">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-13">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-14">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-15">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
+	<Medicine>
+		<Name>Omeprazole</Name>
+		<Pharm name="Omeprazole Org." />
+		<Group>Antimicrobial</Group>
+		<Analogs>
+			<Analog name="Pantoprazole" />
+		</Analogs>
+		<Versions>
+			<Version consistency="Liquor">
+				<Certificate id="ID-16">
+					<Date_of_issue>09-2018</Date_of_issue>
+					<Expiration_date>01-2023</Expiration_date>
+					<Registering_organization name="Jonson&amp;Jonson" />
+				</Certificate>
+				<Package type="Jar">
+					<Quantity_in_package>100</Quantity_in_package>
+					<Price>10000</Price>
+				</Package>
+				<Dosage units="ml">
+					<Measuring>100</Measuring>
+					<Frequency>2 times a week after eating</Frequency>
+				</Dosage>
+			</Version>
+		</Versions>
+	</Medicine>
 </Medicins>

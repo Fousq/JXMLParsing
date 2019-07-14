@@ -1,94 +1,10 @@
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:37 - PARSING STARTED...
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:52 - START ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:132 - END ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImpl:50 - HAS NEXT ELEMENT
-[DEBUG] 2019-07-13 15:30:42 [main] StAXParserImplTest:36 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=10, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=11, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=12, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=13, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=14, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=15, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:37:18 [main] XMLParserBuilder:44 - Medicine [name=Omeprazole, pharm=Pharm [name=Omeprazole Org., country=null], group=Antimicrobial, analogs=[Pantoprazole], versions=[Version [consistency=Liquor, certificate=Certificate [id=16, dateOfIssue=09-2018, exparetionDate=01-2023, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Jar, quantity=100, price=10000], dosage=Dosage [measuring=100 ml, frequency=2 times a week after eating]]]]
+[DEBUG] 2019-07-14 16:43:59 [main] DOMParserImplTest:44 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-14 16:44:08 [main] StAXParserImplTest:36 - Medicine [name=Imodium, pharm=Pharm [name=Janssen-cilag S.A., country=France], group=Organotropic, analogs=[Loperamide, Stoperan], versions=[Version [consistency=Pills, certificate=Certificate [id=1, dateOfIssue=07-2016, exparetionDate=06-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Tutu, quantity=20, price=2345], dosage=Dosage [measuring=4 ml, frequency=2 times a day]]]]
+[DEBUG] 2019-07-14 16:44:18 [main] StAXParserImplTest:36 - Medicine [name=Adderall, pharm=Pharm [name=Adderall Org., country=null], group=Neurotropic, analogs=[Alprazolam], versions=[Version [consistency=Pills, certificate=Certificate [id=2, dateOfIssue=09-2014, exparetionDate=02-2021, RegisterOrg=Jonson&Jonson], pack=MedicinePackage [type=Packet, quantity=10, price=1500], dosage=Dosage [measuring=4 mg, frequency=1 times a day before eating]]]]
